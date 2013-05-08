@@ -12,12 +12,6 @@ $(document).ready(function(){
 		jsonp: 'jsoncallback',
 		timeout: 5000,
 		success: function(data, status){
-			$.each(data, function(i,item){ 
-				var landmark = '<h1>'+item.name+'</h1>'
-				+ '<p>'+item.latitude+'<br>'
-				+ item.longitude+'</p>';
-			
-				output.append(landmark);
 			});
 		},
 		error: function(){
